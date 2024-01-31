@@ -150,7 +150,7 @@ div[data-value="Feedback"] {
 }
 
 .discord-bg {
-    background-image: url(../images/bg.jpg);
+    background-image: url(../../images/bg.jpg);
     background-size: 188.875px;
     height: 188.875px;
     font-size: 18px;
@@ -161,7 +161,7 @@ div[data-value="Feedback"] {
 }
 
 .viewing-party-bg {
-    background-image: url(../images/event-page-02.jpg);
+    background-image: url(../../images/event-page-02.jpg);
     background-size: 300px;
     height: 188.875px;
     font-size: 24px;
@@ -172,7 +172,7 @@ div[data-value="Feedback"] {
 }
 
 .simulcast-bg {
-    background-image: url(../images/youtube-twitch.jpg);
+    background-image: url(../../images/youtube-twitch.jpg);
     background-position: center;
     background-size: 285px;
     height: 188.875px;
@@ -185,7 +185,7 @@ div[data-value="Feedback"] {
 }
 
 .heroes-bg {
-    background-image: url(../images/heroes.png);
+    background-image: url(../../images/heroes.png);
     background-position: center;
     background-size: 285px;
     height: 188.875px;
@@ -255,7 +255,7 @@ ul {
 }
 
 .page-heading-shows-events {
-    background-image: url(../images/shows_events_bg.jpg);
+    background-image: url(../../images/shows_events_bg.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     padding: 110px 0px;
