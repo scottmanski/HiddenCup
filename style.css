@@ -55,7 +55,7 @@ div[data-value="Feedback"] {
 }
 
 .main-banner {
-    background-image: url(images/HC5_Qualifiers_Banner_no_text.jpg);
+    background-image: url(../../images/HC5_Qualifiers_Banner_no_text.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
