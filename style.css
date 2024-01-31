@@ -1,0 +1,395 @@
+body {
+    background-color: #131521;
+    font-family: Garamond;
+    font-size: 18px;
+}
+
+.navbar-default {
+    background-color: #fff;
+    border-color: yellow;
+    width: 100%;
+}
+
+.nav>li {
+    font-size: 22px;
+}
+
+div[data-value="Attend"] {
+    background-color: #fff;
+}
+
+div[data-value="Home"] {
+    background-color: #fff;
+}
+
+div[data-value="Maps"] {
+    margin: 1em;
+}
+
+div[data-value="Civs"] {
+    margin: 1em;
+    margin-bottom: 5em;
+}
+
+div[data-value="Feedback"] {
+    margin: 1em;
+}
+
+.navbar {
+    position: relative;
+    min-height: 50px;
+    margin-bottom: 0px;
+    border: 1px solid transparent;
+}
+
+.navbar>.container .navbar-brand,
+.navbar>.container-fluid .navbar-brand {
+    margin-left: 0px;
+}
+
+.container-fluid {
+    padding-right: 0px;
+    padding-left: 0px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.main-banner {
+    background-image: url(../../images/HC5_Qualifiers_Banner_no_text.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 270px 0px 210px 0px;
+    position: relative;
+}
+
+.main-banner .counter-content {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    padding: 12px 0px;
+    height: 100px;
+    background-color: rgba(250, 250, 250, 0.3);
+}
+
+.main-banner .counter-content li {
+    display: inline-block;
+    font-size: 14px;
+    list-style-type: none;
+    font-weight: bold;
+    text-transform: capitalize;
+    color: #fff;
+    min-width: 15%;
+}
+
+.main-banner .counter-content li span {
+    display: block;
+    font-size: 50px;
+    font-weight: 900;
+    margin-top: -10px;
+}
+
+.main-banner h6 {
+    font-size: 34px;
+    color: #fff;
+    font-weight: 300;
+}
+
+.main-banner h2 {
+    font-size: 100px;
+    font-weight: 800;
+    color: #fff;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.owl-show-events {
+    position: relative;
+    margin-top: -60px;
+}
+
+.owl-show-events .owl-nav {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translateY(5px);
+}
+
+.owl-show-events .owl-nav .owl-prev {
+    position: absolute;
+    left: -45px;
+    outline: none;
+}
+
+.owl-show-events .owl-nav .owl-prev span,
+.owl-show-events .owl-nav .owl-next span {
+    opacity: 0;
+}
+
+.owl-show-events .owl-nav .owl-prev:before {
+    display: inline-block;
+    font-family: 'FontAwesome';
+    color: #7c838b;
+    font-size: 14px;
+    content: '\f060';
+}
+
+.owl-show-events .owl-nav .owl-next {
+    position: absolute;
+    right: -45px;
+    outline: none;
+}
+
+.owl-show-events .owl-nav .owl-next:before {
+    display: inline-block;
+    font-family: 'FontAwesome';
+    color: #7c838b;
+    font-size: 14px;
+    content: '\f061';
+}
+
+.discord-bg {
+    background-image: url(/images/bg.jpg);
+    background-size: 188.875px;
+    height: 188.875px;
+    font-size: 18px;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    vertical-align: middle;
+}
+
+.viewing-party-bg {
+    background-image: url(/images/event-page-02.jpg);
+    background-size: 300px;
+    height: 188.875px;
+    font-size: 24px;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    vertical-align: bottom;
+}
+
+.simulcast-bg {
+    background-image: url(/images/youtube-twitch.jpg);
+    background-position: center;
+    background-size: 285px;
+    height: 188.875px;
+    font-size: 24px;
+    font-weight: 500;
+    color: #fff;
+    text-align: center;
+    padding: 5px;
+    vertical-align: bottom;
+}
+
+.heroes-bg {
+    background-image: url(/images/heroes.png);
+    background-position: center;
+    background-size: 285px;
+    height: 188.875px;
+    font-size: 24px;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+    padding: 5px;
+    vertical-align: bottom;
+}
+
+ul,
+li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+ul {
+    list-style-position: inside;
+}
+
+.shows-events-tabs .tabs-content .event-item img {
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.event-item .thumb img {
+    width: 100%;
+    overflow: hidden;
+}
+
+.shows-events-tabs .tabs-content .event-item {
+    border: 1px dotted #d7dadc;
+    margin-bottom: 30px;
+}
+
+.shows-events-tabs .tabs-content .event-item .left-content h4 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #2a2a2a;
+    margin-bottom: 20px;
+}
+
+.shows-events-tabs .tabs-content .event-item .right-content ul li h6 {
+    font-weight: 700;
+    color: #2a2a2a;
+    font-size: 15px;
+    width: 100%;
+    display: inline;
+    line-height: 28px;
+}
+
+.shows-events-tabs .tabs-content .event-item .right-content ul li i {
+    width: 30px;
+    display: inline-block;
+    float: left;
+    height: 60px;
+}
+
+.shows-events-tabs .tabs-content .event-item .right-content ul li {
+    display: inline-block;
+    width: 100%;
+    border-bottom: 1px solid #d7dadc;
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+}
+
+.page-heading-shows-events {
+    background-image: url(/images/shows_events_bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 110px 0px;
+    text-align: center;
+}
+
+.page-heading-shows-events h2 {
+    font-size: 50px;
+    color: #fff;
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+
+.page-heading-shows-events span {
+    font-size: 20px;
+    color: #fff;
+    font-weight: 300;
+    padding: 0px 250px;
+    display: inline-block;
+}
+
+.QA {
+    vertical-align: middle;
+    font-size: 1.8em;
+    margin-top: 3em;
+    margin-bottom: 3em;
+    width: 75%;
+    border-spacing: 0.5em;
+    border-collapse: separate;
+    display: inline-table;
+    text-align: left;
+}
+
+.QA td:nth-child(1) {
+    font-size: 3em;
+    border-left: 3px solid;
+    height: 50%;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-spacing: 50px;
+    text-align: right;
+}
+
+.QA tr:nth-child(odd) td:nth-child(1) {
+    color: #428ebc;
+}
+
+.QA tr:nth-child(odd) {
+    color: #fff;
+}
+
+.QA tr:nth-child(even) td {
+    color: #b7bfc7;
+}
+
+.QA tbody+tbody::before {
+    content: "";
+    height: 3em;
+    display: table-row;
+    /* Be warned that this pseudo content spans the whole table width in Firefox, but not in Chrome. Uncomment the background rule to see: */
+    /* background: pink; */
+}
+
+.modal-content {
+    background-color: #10303E;
+    color: #E9F4F8;
+}
+
+input {
+    color: #051014;
+}
+
+#MCivTable td,
+#MapTable td,
+th {
+    color: #E9F4F8;
+    border-bottom-color: rgba(140, 130, 115, 0.15) !important;
+    border-top-color: rgba(140, 130, 115, 0.15) !important;
+    white-space: nowrap;
+    font-size: 18px;
+}
+
+#map_image {
+    color: #E9F4F8;
+}
+
+.mandatory_star {
+    color: red;
+}
+
+#error {
+    color: red;
+}
+
+tr>td {
+    border-bottom-color: white !important;
+    border-right-color: white !important;
+}
+
+select {
+    background-color: #323D4B !important;
+}
+
+.btn-group-vertical>.btn.active,
+.btn-group-vertical>.btn:active,
+.btn-group-vertical>.btn:focus,
+.btn-group-vertical>.btn:hover,
+.btn-group>.btn.active,
+.btn-group>.btn:active,
+.btn-group>.btn:focus,
+.btn-group>.btn:hover {
+    background-color: #323D4B !important;
+    color: white !important;
+}
+
+.btn-default.active,
+.btn-default:active,
+.open>.dropdown-toggle.btn-default {
+    color: white !important;
+    background-color: #323D4B !important;
+}
+
+.well {
+    background-color: #323D4B;
+}
+
+label {
+    color: white;
+}
+
+.btn {
+    color: #000;
+}
+
+.btn:hover {
+    color: #333;
+}
