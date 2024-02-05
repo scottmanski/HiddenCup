@@ -216,7 +216,7 @@
                 Array.isArray(n) && 0 === n.length ? e.addClass("shiny-label-null") : (e.html(n), e.removeClass("shiny-label-null"))
             }
         }
-        Shiny;
+        // Shiny;
         var a = t(3379),
             o = t.n(a),
             c = t(7795),

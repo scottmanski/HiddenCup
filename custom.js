@@ -114,3 +114,38 @@
 
 
 })(window.jQuery);
+
+                    function MstageQ() {
+                      //console.log("Qual");
+                      //console.log(document.querySelectorAll("input[value='Qualifier'][name='Mstage']"));
+                      //console.log(document.querySelector("input[value='Qualifier'][name='Mstage']").checked);
+                      if (document.querySelector("input[value='Qualifier'][name='Mstage']").checked == true) {
+                        document.querySelector("input[value='Qualifier'][name='Mstage']").checked = false;
+                        //document.getElementById("MstageQid") = document.getElementById("MstageQid").classList.remove('active');
+                        document.getElementById("MstageQid").querySelector("i").setAttribute("style", "visibility: hidden;");
+                      } else {
+                        //document.getElementById("MstageQid") = document.getElementById("MstageQid").classList.add('active');
+                                                document.querySelector("input[value='Qualifier'][name='Mstage']").checked = true;
+                                                                        document.getElementById("MstageQid").querySelector("i").setAttribute("style", "visibility: visbible;");
+                      }
+                      
+                     //console.log(document.querySelector("input[value='Qualifier'][name='Mstage']").checked);
+                    }
+                    
+                    function MstageME() {
+                      console.log("ME");
+                      console.log(document.querySelectorAll("input[value='Main Event'][name='Mstage']"));
+                      console.log(document.querySelector("input[value='Main Event'][name='Mstage']").checked);
+                      if (document.querySelector("input[value='Main Event'][name='Mstage']").checked == true) {
+                                                document.querySelector("input[value='Main Event'][name='Mstage']").checked = false;
+                        // document.getElementById("MstageMEid") = document.getElementById("MstageMEid").classList.remove('active');
+                                                document.getElementById("MstageMEid").querySelector("i").setAttribute("style", "visibility: hidden;");
+                      } else {
+                        //document.getElementById("MstageMEid")= document.getElementById("MstageMEid").classList.add('active');
+                                                                        document.querySelector("input[value='Main Event'][name='Mstage']").checked = true;
+                                                                        document.getElementById("MstageMEid").querySelector("i").setAttribute("style", "visibility: visible;");
+                      }
+                      
+                      //document.getElementById("MyElement").classList.toggle('MyClass');
+                    }
+                    
