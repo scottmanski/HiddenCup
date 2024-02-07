@@ -3,137 +3,14 @@
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <script type="application/shiny-singletons">add739c82ab207ed2c80be4b7e4b181525eb7a75</script>
-    <script type="application/html-dependencies">jquery[3.6.0];shiny-css[1.8.0];shiny-javascript[1.8.0];sw-buttons-group[0.8.0];font-awesome[6.4.2];htmlwidgets[1.6.4];datatables-css[0.0.0];datatables-binding[0.31];crosstalk[1.2.1];selectize[0.15.2];bootstrap[3.4.1]</script>
     <script src="jquery-3.6.0/jquery.min.js"></script>
-    <link href="shiny-css-1.8.0/shiny.min.css" rel="stylesheet" />
-    <!-- <script src="shiny-javascript-1.8.0/shiny.min.js"></script> 
-    <script src="sw-buttons-group-0.8.0/buttons-group.js"></script> -->
-    <link href="font-awesome-6.4.2/css/all.min.css" rel="stylesheet" />
-    <link href="font-awesome-6.4.2/css/v4-shims.min.css" rel="stylesheet" />
-    <script src="htmlwidgets-1.6.4/htmlwidgets.js"></script>
-    <link href="datatables-css-0.0.0/datatables-crosstalk.css" rel="stylesheet" />
-    <script src="datatables-binding-0.31/datatables.js"></script>
-    <link href="crosstalk-1.2.1/css/crosstalk.min.css" rel="stylesheet" />
-    <script src="crosstalk-1.2.1/js/crosstalk.min.js"></script>
-    <link href="selectize-0.15.2/css/selectize.bootstrap3.css" rel="stylesheet" />
-    <script src="selectize-0.15.2/js/selectize.min.js"></script>
-    <script src="selectize-0.15.2/accessibility/js/selectize-plugin-a11y.min.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="bootstrap-3.4.1/css/bootstrap.min.css" rel="stylesheet" />
     <link href="bootstrap-3.4.1/accessibility/css/bootstrap-accessibility.min.css" rel="stylesheet" />
     <script src="bootstrap-3.4.1/js/bootstrap.min.js"></script>
     <script src="bootstrap-3.4.1/accessibility/js/bootstrap-accessibility.min.js"></script>
     <title>Hidden Cup V</title>
-    <style>
-        .shinyjs-hide {
-            display: none !important;
-        }
-    </style>
-    <!-- <script>
-        Shiny.addCustomMessageHandler('shinyjs-show', function(params) {
-            shinyjs.debugMessage('shinyjs: calling function "show" with parameters:');
-            shinyjs.debugMessage(params);
-            shinyjs.show(params);
-        });
-        Shiny.addCustomMessageHandler('shinyjs-hide', function(params) {
-            shinyjs.debugMessage('shinyjs: calling function "hide" with parameters:');
-            shinyjs.debugMessage(params);
-            shinyjs.hide(params);
-        });
-        Shiny.addCustomMessageHandler('shinyjs-toggle', function(params) {
-            shinyjs.debugMessage('shinyjs: calling function "toggle" with parameters:');
-            shinyjs.debugMessage(params);
-            shinyjs.toggle(params);
-        });
-        Shiny.addCustomMessageHandler('shinyjs-enable', function(params) {
-            shinyjs.debugMessage('shinyjs: calling function "enable" with parameters:');
-            shinyjs.debugMessage(params);
-            shinyjs.enable(params);
-        });
-        Shiny.addCustomMessageHandler('shinyjs-disable', function(params) {
-            shinyjs.debugMessage('shinyjs: calling function "disable" with parameters:');
-            shinyjs.debugMessage(params);
-            shinyjs.disable(params);
-        });
-        Shiny.addCustomMessageHandler('shinyjs-toggleState', function(params) {
-            shinyjs.debugMessage('shinyjs: calling function "toggleState" with parameters:');
-            shinyjs.debugMessage(params);
-            shinyjs.toggleState(params);
-        });
-        Shiny.addCustomMessageHandler('shinyjs-addClass', function(params) {
-            shinyjs.debugMessage('shinyjs: calling function "addClass" with parameters:');
-            shinyjs.debugMessage(params);
-            shinyjs.addClass(params);
-        });
-        Shiny.addCustomMessageHandler('shinyjs-removeClass', function(params) {
-            shinyjs.debugMessage('shinyjs: calling function "removeClass" with parameters:');
-            shinyjs.debugMessage(params);
-            shinyjs.removeClass(params);
-        });
-        Shiny.addCustomMessageHandler('shinyjs-toggleClass', function(params) {
-            shinyjs.debugMessage('shinyjs: calling function "toggleClass" with parameters:');
-            shinyjs.debugMessage(params);
-            shinyjs.toggleClass(params);
-        });
-        Shiny.addCustomMessageHandler('shinyjs-html', function(params) {
-            shinyjs.debugMessage('shinyjs: calling function "html" with parameters:');
-            shinyjs.debugMessage(params);
-            shinyjs.html(params);
-        });
-        Shiny.addCustomMessageHandler('shinyjs-onevent', function(params) {
-            shinyjs.debugMessage('shinyjs: calling function "onevent" with parameters:');
-            shinyjs.debugMessage(params);
-            shinyjs.onevent(params);
-        });
-        Shiny.addCustomMessageHandler('shinyjs-removeEvent', function(params) {
-            shinyjs.debugMessage('shinyjs: calling function "removeEvent" with parameters:');
-            shinyjs.debugMessage(params);
-            shinyjs.removeEvent(params);
-        });
-        Shiny.addCustomMessageHandler('shinyjs-alert', function(params) {
-            shinyjs.debugMessage('shinyjs: calling function "alert" with parameters:');
-            shinyjs.debugMessage(params);
-            shinyjs.alert(params);
-        });
-        Shiny.addCustomMessageHandler('shinyjs-logjs', function(params) {
-            shinyjs.debugMessage('shinyjs: calling function "logjs" with parameters:');
-            shinyjs.debugMessage(params);
-            shinyjs.logjs(params);
-        });
-        Shiny.addCustomMessageHandler('shinyjs-runjs', function(params) {
-            shinyjs.debugMessage('shinyjs: calling function "runjs" with parameters:');
-            shinyjs.debugMessage(params);
-            shinyjs.runjs(params);
-        });
-        Shiny.addCustomMessageHandler('shinyjs-reset', function(params) {
-            shinyjs.debugMessage('shinyjs: calling function "reset" with parameters:');
-            shinyjs.debugMessage(params);
-            shinyjs.reset(params);
-        });
-        Shiny.addCustomMessageHandler('shinyjs-delay', function(params) {
-            shinyjs.debugMessage('shinyjs: calling function "delay" with parameters:');
-            shinyjs.debugMessage(params);
-            shinyjs.delay(params);
-        });
-        Shiny.addCustomMessageHandler('shinyjs-click', function(params) {
-            shinyjs.debugMessage('shinyjs: calling function "click" with parameters:');
-            shinyjs.debugMessage(params);
-            shinyjs.click(params);
-        });
-        Shiny.addCustomMessageHandler('shinyjs-refresh', function(params) {
-            shinyjs.debugMessage('shinyjs: calling function "refresh" with parameters:');
-            shinyjs.debugMessage(params);
-            shinyjs.refresh(params);
-        });
-    </script> -->
-    <script src="shinyjs/shinyjs-default-funcs.js"></script>
-    <script>
-        shinyjs.debug = false;
-    </script>
     <link rel="shortcut icon" href="favicon.ico" />
     <link rel="stylesheet" type="text/css" href="styleshiny.css" />
-    <link rel="stylesheet" type="text/css" href="owl-carousel.css" />
     <script src="https://kit.fontawesome.com/c7a4f94894.js" crossorigin="anonymous"></script>
 </head>
 
