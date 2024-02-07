@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script type="application/shiny-singletons">add739c82ab207ed2c80be4b7e4b181525eb7a75</script>
+    <script type="application/html-dependencies">jquery[3.6.0];shiny-css[1.8.0];shiny-javascript[1.8.0];sw-buttons-group[0.8.0];font-awesome[6.4.2];htmlwidgets[1.6.4];datatables-css[0.0.0];datatables-binding[0.31];crosstalk[1.2.1];selectize[0.15.2];bootstrap[3.4.1]</script>
+    <script src="jquery-3.6.0/jquery.min.js"></script>
+    <link href="shiny-css-1.8.0/shiny.min.css" rel="stylesheet" />
+    <!-- <script src="shiny-javascript-1.8.0/shiny.min.js"></script> 
+    <script src="sw-buttons-group-0.8.0/buttons-group.js"></script> -->
+    <link href="font-awesome-6.4.2/css/all.min.css" rel="stylesheet" />
+    <link href="font-awesome-6.4.2/css/v4-shims.min.css" rel="stylesheet" />
+    <script src="htmlwidgets-1.6.4/htmlwidgets.js"></script>
+    <link href="datatables-css-0.0.0/datatables-crosstalk.css" rel="stylesheet" />
+    <script src="datatables-binding-0.31/datatables.js"></script>
+    <link href="crosstalk-1.2.1/css/crosstalk.min.css" rel="stylesheet" />
+    <script src="crosstalk-1.2.1/js/crosstalk.min.js"></script>
+    <link href="selectize-0.15.2/css/selectize.bootstrap3.css" rel="stylesheet" />
+    <script src="selectize-0.15.2/js/selectize.min.js"></script>
+    <script src="selectize-0.15.2/accessibility/js/selectize-plugin-a11y.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="bootstrap-3.4.1/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="bootstrap-3.4.1/accessibility/css/bootstrap-accessibility.min.css" rel="stylesheet" />
+    <script src="bootstrap-3.4.1/js/bootstrap.min.js"></script>
+    <script src="bootstrap-3.4.1/accessibility/js/bootstrap-accessibility.min.js"></script>
+    <title>Hidden Cup V</title>
+    <style>
+        .shinyjs-hide {
+            display: none !important;
+        }
+    </style>
+    <!-- <script>
+        Shiny.addCustomMessageHandler('shinyjs-show', function(params) {
+            shinyjs.debugMessage('shinyjs: calling function "show" with parameters:');
+            shinyjs.debugMessage(params);
+            shinyjs.show(params);
+        });
+        Shiny.addCustomMessageHandler('shinyjs-hide', function(params) {
+            shinyjs.debugMessage('shinyjs: calling function "hide" with parameters:');
+            shinyjs.debugMessage(params);
+            shinyjs.hide(params);
+        });
+        Shiny.addCustomMessageHandler('shinyjs-toggle', function(params) {
+            shinyjs.debugMessage('shinyjs: calling function "toggle" with parameters:');
+            shinyjs.debugMessage(params);
+            shinyjs.toggle(params);
+        });
+        Shiny.addCustomMessageHandler('shinyjs-enable', function(params) {
+            shinyjs.debugMessage('shinyjs: calling function "enable" with parameters:');
+            shinyjs.debugMessage(params);
+            shinyjs.enable(params);
+        });
+        Shiny.addCustomMessageHandler('shinyjs-disable', function(params) {
+            shinyjs.debugMessage('shinyjs: calling function "disable" with parameters:');
+            shinyjs.debugMessage(params);
+            shinyjs.disable(params);
+        });
+        Shiny.addCustomMessageHandler('shinyjs-toggleState', function(params) {
+            shinyjs.debugMessage('shinyjs: calling function "toggleState" with parameters:');
+            shinyjs.debugMessage(params);
+            shinyjs.toggleState(params);
+        });
+        Shiny.addCustomMessageHandler('shinyjs-addClass', function(params) {
+            shinyjs.debugMessage('shinyjs: calling function "addClass" with parameters:');
+            shinyjs.debugMessage(params);
+            shinyjs.addClass(params);
+        });
+        Shiny.addCustomMessageHandler('shinyjs-removeClass', function(params) {
+            shinyjs.debugMessage('shinyjs: calling function "removeClass" with parameters:');
+            shinyjs.debugMessage(params);
+            shinyjs.removeClass(params);
+        });
+        Shiny.addCustomMessageHandler('shinyjs-toggleClass', function(params) {
+            shinyjs.debugMessage('shinyjs: calling function "toggleClass" with parameters:');
+            shinyjs.debugMessage(params);
+            shinyjs.toggleClass(params);
+        });
+        Shiny.addCustomMessageHandler('shinyjs-html', function(params) {
+            shinyjs.debugMessage('shinyjs: calling function "html" with parameters:');
+            shinyjs.debugMessage(params);
+            shinyjs.html(params);
+        });
+        Shiny.addCustomMessageHandler('shinyjs-onevent', function(params) {
+            shinyjs.debugMessage('shinyjs: calling function "onevent" with parameters:');
+            shinyjs.debugMessage(params);
+            shinyjs.onevent(params);
+        });
+        Shiny.addCustomMessageHandler('shinyjs-removeEvent', function(params) {
+            shinyjs.debugMessage('shinyjs: calling function "removeEvent" with parameters:');
+            shinyjs.debugMessage(params);
+            shinyjs.removeEvent(params);
+        });
+        Shiny.addCustomMessageHandler('shinyjs-alert', function(params) {
+            shinyjs.debugMessage('shinyjs: calling function "alert" with parameters:');
+            shinyjs.debugMessage(params);
+            shinyjs.alert(params);
+        });
+        Shiny.addCustomMessageHandler('shinyjs-logjs', function(params) {
+            shinyjs.debugMessage('shinyjs: calling function "logjs" with parameters:');
+            shinyjs.debugMessage(params);
+            shinyjs.logjs(params);
+        });
+        Shiny.addCustomMessageHandler('shinyjs-runjs', function(params) {
+            shinyjs.debugMessage('shinyjs: calling function "runjs" with parameters:');
+            shinyjs.debugMessage(params);
+            shinyjs.runjs(params);
+        });
+        Shiny.addCustomMessageHandler('shinyjs-reset', function(params) {
+            shinyjs.debugMessage('shinyjs: calling function "reset" with parameters:');
+            shinyjs.debugMessage(params);
+            shinyjs.reset(params);
+        });
+        Shiny.addCustomMessageHandler('shinyjs-delay', function(params) {
+            shinyjs.debugMessage('shinyjs: calling function "delay" with parameters:');
+            shinyjs.debugMessage(params);
+            shinyjs.delay(params);
+        });
+        Shiny.addCustomMessageHandler('shinyjs-click', function(params) {
+            shinyjs.debugMessage('shinyjs: calling function "click" with parameters:');
+            shinyjs.debugMessage(params);
+            shinyjs.click(params);
+        });
+        Shiny.addCustomMessageHandler('shinyjs-refresh', function(params) {
+            shinyjs.debugMessage('shinyjs: calling function "refresh" with parameters:');
+            shinyjs.debugMessage(params);
+            shinyjs.refresh(params);
+        });
+    </script> -->
+    <script src="shinyjs/shinyjs-default-funcs.js"></script>
+    <script>
+        shinyjs.debug = false;
+    </script>
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="owl-carousel.css" />
+    <script src="https://kit.fontawesome.com/c7a4f94894.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <body class="bslib-page-navbar">
+        <nav class="navbar navbar-default navbar-static-top" role="navigation">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <span class="navbar-brand">Hidden Cup V</span>
+                </div>
+                <ul class="nav navbar-nav nav-underline shiny-tab-input" id="navbarID" data-tabsetid="9450">
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="">Info</a>
+                    </li>
+                    <li>
+                        <a href="">Players</a>
+                    </li>
+                    <li class="active">
+                        <a href="heroes.html">Heroes</a>
+                    </li>
+                    <li>
+                        <a href="attend.html">Attend</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-bs-toggle="dropdown" data-value="Statistics">
+              Statistics
+              <b class="caret"></b>
+            </a>
+                        <ul class="dropdown-menu" data-tabsetid="8043">
+                            <li>
+                                <a href="Maps.html">Maps</a>
+                            </li>
+                            <li>
+                                <a href="Civs.html">Civs</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">Predictions</a>
+                    </li>
+                    <li>
+                        <a href="">Merch</a>
+                    </li>
+                    <li>
+                        <a href="FAQ.html">FAQ</a>
+                    </li>
+                    <li>
+                        <a href="">History</a>
+                    </li>
+                    <li>
+                        <a href="">Production Team</a>
+                    </li>
+                    <li>
+                        <a href="feedback.html">Feedback</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="container-fluid">
+            <div class="row"></div>
+            <div id="container">
+    <img src="images/Full_Leaked_Heroes_3_transparent.png" id="herobg"/>
+    <a id="hero1cap">
+  <img src="images/Jeanbureau_aoe2DE.webp"/>
+  <span>Jean Bureau (1390–1432) was a key figure in the French military and political landscape during the Hundred Years&apos; War. 
+  As a loyal supporter of King Charles VII, Bureau played a pivotal role in the French victories, notably contributing to the successful reconquest of Normandy. His strategic brilliance, 
+  exemplified in the Battle of Formigny, secured his place in history as a skilled military commander and statesman, ultimately influencing the trajectory of the war and shaping the course of French history in the 15th century. 
+  In Age of Empires II, Jean Bureau&apos;s unit is a bombard cannon, commonly abbreviated to BBC. This also happens to be the abbreviation for beloved bald caster.</span>
+</a>
+
+      <a id="hero2cap">
+  <img src="images/Khosrau_aoe2DE.webp"/>
+  <span>
+Khosrau is a figure central to Persian history, known as one of the greatest emperors of the Sassanian Empire, reigning from 531 to 579 AD. He is celebrated for his military prowess, diplomatic acumen, and patronage of the arts and sciences, overseeing a flourishing period of Persian culture and expansion. Khosrau's reign marked significant territorial gains, cultural achievements, and enduring architectural legacies, contributing to the rich tapestry of ancient Persian civilization.</span>
+</a>
+  
+   <a id="hero3cap">
+  <img src="images/GajahMada_aoe2DE.webp"/>
+  <span class="right">
+Gajah Mada was a powerful military and political leader in the Majapahit Empire, a vast and influential Hindu-Buddhist kingdom that existed in Southeast Asia from the late 13th to the early 16th century. Serving as the prime minister from 1334 to 1364, Gajah Mada is best known for his unwavering commitment to the pursuit of unity and expansion of the Majapahit realm. His famous oath, the "Palapa Oath," expressed his determination to abstain from certain luxuries until he successfully unified the Indonesian archipelago, a goal he didn't achieve during his lifetime but left an indelible mark on Indonesian history and folklore.</span>
+  </a>
+  
+     <a id="hero4cap">
+  <img src="images/Alexios Komemnios.webp"/>
+  <span>Alexios Komnenos was a Byzantine emperor who reigned from 1081 to 1118 AD. He is renowned for his efforts to stabilize and revitalize the Byzantine Empire amidst external threats, including invasions by Normans, Pechenegs, and the First Crusade. Alexios implemented military, economic, and administrative reforms that helped fortify the empire and laid the groundwork for its survival and resurgence in the face of significant challenges.</span>
+  </a>
+  
+      <a id="hero5cap">
+  <img src="images/Selim the Grim.webp"/>
+  <span>Selim I, also known as Selim the Grim, was the Ottoman Sultan from 1512 to 1520. Renowned for his military prowess and determination, he expanded the Ottoman Empire significantly during his short reign. Selim is particularly remembered for his conquest of the Mamluk Sultanate, securing control over Egypt and the holy cities of Mecca and Medina, marking a crucial period of Ottoman dominance in the Islamic world.</span>
+  </a>
+  
+      <a id="hero6cap">
+  <img src="images/Pachacuti_aoe2DE.webp"/>
+  <span class="right">Pachacuti was an influential ruler of the Inca Empire, reigning from 1438 to 1471. Recognized as one of the greatest Inca leaders, he is credited with transforming the small Kingdom of Cusco into a vast and powerful empire through military conquests and strategic governance. Pachacuti's reign laid the foundation for the expansive territorial and cultural achievements of the Inca civilization.</span>
+  </a>
+  
+      <a id="hero7cap">
+  <img src="images/King_Stephen_PNG.png"/>
+  <span>King Stephen of England, who reigned from 1135 to 1154, faced a tumultuous period known as "The Anarchy." His rule was marked by a bitter struggle for the throne against Empress Matilda, leading to widespread chaos and civil unrest. Despite Stephen's efforts to maintain stability, his reign was characterized by political strife and territorial disputes, leaving a lasting impact on the medieval history of England.</span>
+  </a>
+        <a id="hero8cap">
+  <img src="images/Robert_guiscard_aoe2de.webp"/>
+  <span class="right">Robert Guiscard, a Norman adventurer and military leader, played a pivotal role in the 11th-century Norman conquest of Southern Italy and Sicily. Born in 1015, he rose to prominence through a series of military campaigns, eventually establishing the powerful Hauteville family in the region. Known for his strategic brilliance, Guiscard earned the title "Duke of Apulia" and "Sicily" and left a lasting legacy as a key figure in the Norman expansion in the Mediterranean during the High Middle Ages.</span>
+  </a>
+        <a id="hero9cap">
+  <img src="images/Jadwiga_aoe2de.webp"/>
+  <span class="right">Jadwiga, also known as Hedwig, was a medieval queen who ruled Poland from 1384 until her death in 1399. Crowned as king, rather than queen, due to Polish laws preventing a female ruler, Jadwiga was a unifying figure in her country. Renowned for her benevolence, diplomatic skills, and support for education and culture, she is remembered as one of Poland's most influential and beloved monarchs.</span>
+  </a>
+        <a id="hero10cap">
+  <img src="images/Sumanguru_aoe2DE.webp"/>
+  <span class="right">Sumanguru, also known as Sumanguru Kanté, was a legendary figure in West African history during the 13th century. He was the ruler of the Sosso Kingdom, and his military exploits and political maneuvering played a significant role in the ancient Mali Empire's early history. Sumanguru is often remembered as a powerful and contentious figure who faced off against Sundiata Keita, the founder of the Mali Empire, in a legendary battle that marked a turning point in the region's history.</span>
+  </a>
+  
+  <!-- <a id="hero11cap">
+  <img src="images/Your Mom.webp"/>
+  <span>Nice try n00b!</span>
+  </a>
+        <a id="hero12cap">
+  <img src="images/.webp"/>
+  <span></span>
+  </a>
+        <a id="hero13cap">
+  <img src="images/.webp"/>
+  <span></span>
+  </a>
+        <a id="hero14cap">
+  <img src="images/.webp"/>
+  <span></span>
+  </a>
+        <a id="hero15cap">
+  <img src="images/.webp"/>
+  <span></span>
+  </a>
+        <a id="hero16cap">
+  <img src="images/.webp"/>
+  <span></span>
+  </a>
+</a> -->
+    
+</div>
+            <div class="row">
+                <!-- jQuery -->
+                <!-- <script src="jquery-2.1.0.min.js"></script> -->
+
+                <!-- Bootstrap -->
+                <!-- <script src="bootstrap.min.js"></script>-->
+
+                <!-- Plugins -->
+                <script src="scrollreveal.min.js"></script>
+                <!-- <script src="jquery.counterup.min.js"></script> -->
+                <script src="owl-carousel.js"></script>
+
+                <!-- Global Init -->
+                <script src="custom.js"></script>
+                <script type="text/javascript">
+                    function updateActive() {
+                        document.querySelector('[data-value="Home"]').parentElement.setAttribute("class", "");
+                        document.querySelector('[data-value="FAQ"]').parentElement.setAttribute("class", "active");
+                        $('html,body').scrollTop(0);
+                    }
+
+
+                    function onSubmit(token) {
+                        document.getElementById("demo-form").submit();
+                    }
+
+                    // document.getElementById("heroesclick").href = document.querySelector('[data-value="FAQ"]').href;
+                    
+                    //console.log(document.getElementById("Mstage").getElementsByTagName('input').checked);
+
+                    
+                </script>
+            </div>
+        </div>
+    </body>
+</body>
+
+</html>

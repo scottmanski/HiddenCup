@@ -4,6 +4,19 @@ body {
     font-size: 18px;
     /*height: 93vh;*/
 }
+        body,
+        html {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        iframe {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            border: none;
+        }
 
 .navbar-default {
     background-color: #fff;
@@ -394,120 +407,3 @@ label {
 .btn:hover {
     color: #333;
 }
-
-div#container {
-    position:relative;
-    width: 100%;
-}
-
-a span {
-  display: none;
-  position: absolute;
-  left: calc(1200/1843*107px);
-  width: 100%;
-  padding: 10px;
-  background: rgba(255,255,255,.9);
-  z-index: 99;
-}
-
-a span.right {
-  display: none;
-  position: absolute;
-  left: -800px;
-  width: 100%;
-  padding: 10px;
-  background: rgba(255,255,255,.9);
-  z-index: 99;
-}
-
-a:hover span {
-  display: inline;
-}
-
-img#herobg {
-    width: 1200px;
-    margin-left: 200px;
-}
-
-div#container a img {
-    position: absolute;
-    /*left: 606px; /* 1920/1843*582 */
-    /*top: 151px; /* 1920/1843*145 */
-    width: calc(1200/1843*107px); /* 1920/1843*107 */
-}
-
-div#container a {
-  width: 800px;
-}
-
-
-#hero1cap {
-    position: absolute;
-    margin-left: 200px;
-    left: calc(1200/1843*582px); /* 1200/1843*582 */
-    top: calc(1200/1843*145px); /* 1200/1843*145 */
-}
-
-#hero2cap {
-    position: absolute;
-    margin-left: 200px;
-    left: calc(1200/1843*358px); /* 1200/1843*582 */
-    top: calc(1200/1843*566px); /* 1200/1843*145 */
-}
-
-#hero3cap {
-    position: absolute;
-    margin-left: 200px;
-    left: calc(1200/1843*1284px);
-    top: calc(1200/1843*275px);
-}
-
-#hero4cap {
-    position: absolute;
-    margin-left: 200px;
-    left: calc(1200/1843*761px);
-    top: calc(1200/1843*19px);
-}
-
-#hero5cap {
-    position: absolute;
-    margin-left: 200px;
-    left: calc(1200/1843*563px);
-    top: calc(1200/1843*849px);
-}
-
-#hero6cap {
-    position: absolute;
-    margin-left: 200px;
-    left: calc(1200/1843*1341px);
-    top: calc(1200/1843*421px);
-}
-
-#hero7cap {
-    position: absolute;
-    margin-left: 200px;
-    left: calc(1200/1843*452px);
-    top: calc(1200/1843*275px);
-}
-
-#hero8cap {
-    position: absolute;
-    margin-left: 200px;
-    left: calc(1200/1843*975px);
-    top: calc(1200/1843*18px);
-}
-
-#hero9cap {
-    position: absolute;
-    margin-left: 200px;
-    left: calc(1200/1843*1378px);
-    top: calc(1200/1843*565px);
-}
-
-#hero10cap {
-    position: absolute;
-    margin-left: 200px;
-    left: calc(1200/1843*1284px);
-    top: calc(1200/1843*703px);
-}
-
