@@ -279,45 +279,41 @@ ul {
 }
 
 .QA {
-    vertical-align: middle;
-    font-size: 1.8em;
-    margin-top: 3em;
-    margin-bottom: 3em;
-    width: 75%;
-    border-spacing: 0.5em;
-    border-collapse: separate;
-    display: inline-table;
-    text-align: left;
+  vertical-align: middle;
+  font-size: 1.1em;
+  margin-top: 3em;
+  margin-bottom: 3em;
+  width: 75%;
+  border-spacing: 0.5em;
+  border-collapse: separate;
+  display: inline-table;
+  text-align: left;
+}
+.QA td:nth-child(1) { 
+  font-size: 3em;
+  border-left: 3px solid;
+  height: 50%;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-spacing: 50px;
+  text-align: right;
+}
+.QA tr:nth-child(odd) td:nth-child(1) { 
+  color: #428ebc;
+}
+.QA tr:nth-child(odd) { 
+  color: #fff;
+}
+.QA tr:nth-child(even) td { 
+  color: #b7bfc7;
 }
 
-.QA td:nth-child(1) {
-    font-size: 3em;
-    border-left: 3px solid;
-    height: 50%;
-    padding-left: 10px;
-    padding-right: 10px;
-    border-spacing: 50px;
-    text-align: right;
-}
-
-.QA tr:nth-child(odd) td:nth-child(1) {
-    color: #428ebc;
-}
-
-.QA tr:nth-child(odd) {
-    color: #fff;
-}
-
-.QA tr:nth-child(even) td {
-    color: #b7bfc7;
-}
-
-.QA tbody+tbody::before {
-    content: "";
-    height: 3em;
-    display: table-row;
-    /* Be warned that this pseudo content spans the whole table width in Firefox, but not in Chrome. Uncomment the background rule to see: */
-    /* background: pink; */
+.QA tbody + tbody::before {
+	content: "";
+	height: 3em;
+	display: table-row;
+	/* Be warned that this pseudo content spans the whole table width in Firefox, but not in Chrome. Uncomment the background rule to see: */
+	/* background: pink; */
 }
 
 .modal-content {
