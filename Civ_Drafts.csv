@@ -1,11 +1,11 @@
 Civ_Draft,draft_host,draft_guest,Preset,player,executingPlayer,actionType,Civ,isRandomlyChosen,offset,action,PickNo,FirstPick,GlobalBan,Picker
-AeJVK,Lyx,LobodeLaNieve,Hidden Cup 5 Qualifier Bo3,HOST,HOST,ban,Hindustanis,FALSE,8901,NA,1,0,1,EMA_003
+AeJVK,Lyx,LobodeLaNieve,Hidden Cup 5 Qualifier Bo3,HOST,HOST,ban,Turks,FALSE,8901,NA,1,0,1,EMA_003
 AeJVK,Lyx,LobodeLaNieve,Hidden Cup 5 Qualifier Bo3,GUEST,GUEST,ban,Hindustanis,FALSE,19797,NA,2,0,1,LobodeLaNieve
 AeJVK,Lyx,LobodeLaNieve,Hidden Cup 5 Qualifier Bo3,GUEST,GUEST,ban,Vietnamese,FALSE,39178,NA,3,0,1,LobodeLaNieve
 AeJVK,Lyx,LobodeLaNieve,Hidden Cup 5 Qualifier Bo3,HOST,HOST,ban,Incas,FALSE,46255,NA,4,0,1,EMA_003
 AeJVK,Lyx,LobodeLaNieve,Hidden Cup 5 Qualifier Bo3,HOST,HOST,ban,Aztecs,FALSE,47842,NA,5,0,1,EMA_003
 AeJVK,Lyx,LobodeLaNieve,Hidden Cup 5 Qualifier Bo3,GUEST,GUEST,ban,Chinese,FALSE,62089,NA,6,0,1,LobodeLaNieve
-AeJVK,Lyx,LobodeLaNieve,Hidden Cup 5 Qualifier Bo3,GUEST,GUEST,pick,Hindustanis,FALSE,69647,NA,1,1,0,LobodeLaNieve
+AeJVK,Lyx,LobodeLaNieve,Hidden Cup 5 Qualifier Bo3,GUEST,GUEST,pick,Turks,FALSE,69647,NA,1,1,0,LobodeLaNieve
 AeJVK,Lyx,LobodeLaNieve,Hidden Cup 5 Qualifier Bo3,HOST,HOST,pick,Japanese,FALSE,87251,NA,2,1,0,EMA_003
 AeJVK,Lyx,LobodeLaNieve,Hidden Cup 5 Qualifier Bo3,GUEST,GUEST,pick,Persians,FALSE,91740,NA,3,0,0,LobodeLaNieve
 AeJVK,Lyx,LobodeLaNieve,Hidden Cup 5 Qualifier Bo3,HOST,HOST,pick,Cumans,FALSE,104149,NA,4,0,0,EMA_003
