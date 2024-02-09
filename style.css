@@ -507,3 +507,31 @@ div#container a {
     top: calc(1200/1843*703px);
 }
 
+#hero11cap {
+    position: absolute;
+    margin-left: 200px;
+    left: calc(1200/1843*395px);
+    top: calc(1200/1843*422px);
+}
+
+#hero12cap {
+    position: absolute;
+    margin-left: 200px;
+    left: calc(1200/1843*1154px);
+    top: calc(1200/1843*144px);
+}
+
+#hero13cap {
+    position: absolute;
+    margin-left: 200px;
+    left: calc(1200/1843*1173px);
+    top: calc(1200/1843*847px);
+}
+
+#hero14cap {
+    position: absolute;
+    margin-left: 200px;
+    left: calc(1200/1843*452px);
+    top: calc(1200/1843*704px);
+}
+
