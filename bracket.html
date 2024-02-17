@@ -78,9 +78,14 @@
         </nav>
 
             <!-- <iframe src="https://apps.hiddencup.com/Maps?showcase=0" height="100%" width="100%"></iframe> -->
-            <iframe src="https://bracket.hiddencup.com/" frameborder="0" height="100%" width="100%" style="overflow:hidden;margin-bottom:0px;"></iframe>
+            <iframe src="https://bracket.hiddencup.com/" frameborder="0" height="100%" width="100%" style="overflow:hidden;"></iframe>
 
     </body>
 </body>
+<script>
+  $(window).resize(function() {
+  $("iframe").css("padding-bottom", $(".container-fluid").height());
+});
 
+</script>
 </html>

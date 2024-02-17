@@ -16,6 +16,7 @@ body {
             height: 100%;
             overflow: hidden;
             border: none;
+            margin-bottom: 5em;
         }
 
 .navbar-default {
@@ -47,6 +48,10 @@ div[data-value="Civs"] {
 
 div[data-value="Feedback"] {
     margin: 1em;
+}
+
+div[data-value="Predictions"] {
+    margin-bottom: 5em;
 }
 
 .navbar {
