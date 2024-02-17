@@ -1,8 +1,14 @@
-body {
+html {
     background-color: #131521;
-    font-family: Garamond;
-    font-size: 18px;
-    /*height: 93vh;*/
+    background: radial-gradient(circle at center, #31516e 0, #131521 70%);
+    background-size: cover;
+    height: 100%;
+}
+
+body {
+  background-color: transparent;
+  font-family: Garamond;
+  font-size: 18px;
 }
 
 .navbar-default {
