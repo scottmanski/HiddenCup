@@ -3,14 +3,15 @@
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <script src="jquery-3.6.0/jquery.min.js"></script>
+        <script src="jquery-3.6.0/jquery.min.js"></script>
     <link href="bootstrap-3.4.1/css/bootstrap.min.css" rel="stylesheet" />
     <link href="bootstrap-3.4.1/accessibility/css/bootstrap-accessibility.min.css" rel="stylesheet" />
     <script src="bootstrap-3.4.1/js/bootstrap.min.js"></script>
     <script src="bootstrap-3.4.1/accessibility/js/bootstrap-accessibility.min.js"></script>
     <title>Hidden Cup V</title>
     <link rel="shortcut icon" href="favicon.ico" />
-    <link rel="stylesheet" type="text/css" href="styleshiny.css" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <!--<link rel="stylesheet" type="text/css" href="owl-carousel.css" />-->
     <script src="https://kit.fontawesome.com/c7a4f94894.js" crossorigin="anonymous"></script>
 </head>
 
@@ -38,16 +39,16 @@
                     <li>
                         <a href="attend.html">Attend</a>
                     </li>
-                    <li class="dropdown active">
+                    <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-bs-toggle="dropdown" data-value="Statistics">
               Statistics
               <b class="caret"></b>
             </a>
                         <ul class="dropdown-menu" data-tabsetid="8043">
-                            <li>
+                                                      <li>
                                 <a href="matchups.html">Matchups</a>
                             </li>
-                            <li class="active">
+                            <li>
                                 <a href="maps.html">Maps</a>
                             </li>
                             <li>
@@ -70,16 +71,57 @@
                     <li>
                         <a href="team.html">Production Team</a>
                     </li>
-                    <li>
+                    <li class="active">
                         <a href="feedback.html">Feedback</a>
                     </li>
                 </ul>
             </div>
         </nav>
+        <div class="container-fluid">
+            <div class="row"></div>
+            <div class="tab-content" data-tabsetid="9450">
+<div class="tab-pane active" data-value="FAQ" id="tab-9450-5">
 
-            <!-- <iframe src="https://apps.hiddencup.com/Maps?showcase=0" height="100%" width="100%"></iframe> -->
-            <iframe src="https://apps.hiddencup.com/Maps" frameborder="0" height="100%" width="100%"></iframe>
+<div style="text-align: center;">
+<h2 style="color: white;">More info coming soon!</h2>
+                               </div>
 
+                </div>
+            </div>
+            <div class="row">
+                <!-- jQuery -->
+                <!-- <script src="jquery-2.1.0.min.js"></script> -->
+
+                <!-- Bootstrap -->
+                <!-- <script src="bootstrap.min.js"></script>-->
+
+                <!-- Plugins -->
+                <script src="scrollreveal.min.js"></script>
+                <!-- <script src="jquery.counterup.min.js"></script> -->
+                <script src="owl-carousel.js"></script>
+
+                <!-- Global Init -->
+                <!-- <script src="custom.js"></script> -->
+                <script type="text/javascript">
+                    function updateActive() {
+                        document.querySelector('[data-value="Home"]').parentElement.setAttribute("class", "");
+                        document.querySelector('[data-value="FAQ"]').parentElement.setAttribute("class", "active");
+                        $('html,body').scrollTop(0);
+                    }
+
+
+                    function onSubmit(token) {
+                        document.getElementById("demo-form").submit();
+                    }
+
+                    // document.getElementById("heroesclick").href = document.querySelector('[data-value="FAQ"]').href;
+                    
+                    //console.log(document.getElementById("Mstage").getElementsByTagName('input').checked);
+
+                    
+                </script>
+            </div>
+        </div>
     </body>
 </body>
 

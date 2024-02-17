@@ -158,6 +158,7 @@ div[data-value="Feedback"] {
     color: #fff;
     text-align: center;
     padding: 10px;
+    padding-top: 25px;
     vertical-align: middle;
 }
 
@@ -165,11 +166,16 @@ div[data-value="Feedback"] {
     background-image: url(images/event-page-02.jpg);
     background-size: 300px;
     height: 188.875px;
-    font-size: 24px;
+    font-size: 32px;
     color: #fff;
     text-align: center;
     padding: 10px;
     vertical-align: bottom;
+        text-shadow:
+    -2px -2px 0 #000,
+    2px -2px 0 #000,
+    -2px 2px 0 #000,
+    2px 2px 0 #000;  
 }
 
 .simulcast-bg {
@@ -183,6 +189,11 @@ div[data-value="Feedback"] {
     text-align: center;
     padding: 5px;
     vertical-align: bottom;
+    text-shadow:
+    -2px -2px 0 #000,
+    2px -2px 0 #000,
+    -2px 2px 0 #000,
+    2px 2px 0 #000;  
 }
 
 .heroes-bg {
@@ -196,7 +207,88 @@ div[data-value="Feedback"] {
     text-align: center;
     padding: 5px;
     vertical-align: bottom;
+            text-shadow:
+    -2px -2px 0 #000,
+    2px -2px 0 #000,
+    -2px 2px 0 #000,
+    2px 2px 0 #000;  
 }
+
+.merch-bg {
+    background-image: url(images/merch.png);
+    background-position: center;
+    background-size: 285px;
+    height: 188.875px;
+    font-size: 28px;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+    padding: 5px;
+    vertical-align: bottom;
+            text-shadow:
+    -2px -2px 0 #000,
+    2px -2px 0 #000,
+    -2px 2px 0 #000,
+    2px 2px 0 #000;  
+}
+
+.t90-bg {
+    background-image: url(images/t90logo.jpg);
+    background-position: center;
+    background-size: 285px;
+    height: 188.875px;
+    font-size: 24px;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+    padding: 5px;
+    vertical-align: bottom;
+}
+
+.bracket-bg {
+    background-image: url(images/bracket.png);
+    background-position: center;
+    background-size: 285px;
+    height: 188.875px;
+    font-size: 28px;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+    padding: 5px;
+    vertical-align: bottom;
+                text-shadow:
+    -2px -2px 0 #000,
+    2px -2px 0 #000,
+    -2px 2px 0 #000,
+    2px 2px 0 #000;  
+}
+
+.liquipedia-bg {
+    background-image: url(images/liquipedia.png);
+    background-position: center;
+    background-size: 285px;
+    height: 188.875px;
+    font-size: 30px;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+    padding: 5px;
+    vertical-align: bottom;
+}
+
+.trophy-bg {
+    background-image: url(images/trophy.jpg);
+    background-position: center;
+    background-size: 285px;
+    height: 188.875px;
+    font-size: 28px;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+    padding: 5px;
+    vertical-align: bottom;
+}
+
 
 ul,
 li {
@@ -399,7 +491,7 @@ div#container {
 a span {
   display: none;
   position: absolute;
-  left: calc(1200/1843*107px);
+  left: calc(1200/1920*107px);
   width: 100%;
   padding: 10px;
   background: rgba(255,255,255,.9);
@@ -427,9 +519,11 @@ img#herobg {
 
 div#container a img {
     position: absolute;
-    /*left: 606px; /* 1920/1843*582 */
-    /*top: 151px; /* 1920/1843*145 */
-    width: calc(1200/1843*107px); /* 1920/1843*107 */
+    /*left: 606px; /* 1920/1920*582 */
+    /*top: 151px; /* 1920/1920*145 */
+    width: calc(1200/1920*107px); /* 1920/1920*107 */
+    margin-left: auto;
+    margin-right: auto;
 }
 
 div#container a {
@@ -439,99 +533,235 @@ div#container a {
 
 #hero1cap {
     position: absolute;
-    margin-left: 200px;
-    left: calc(1200/1843*582px); /* 1200/1843*582 */
-    top: calc(1200/1843*145px); /* 1200/1843*145 */
+    margin-left: 224px;
+    left: calc(1200/1920*582px); /* 1200/1920*582 */
+    top: calc(1200/1920*145px); /* 1200/1920*145 */
 }
 
 #hero2cap {
     position: absolute;
-    margin-left: 200px;
-    left: calc(1200/1843*358px); /* 1200/1843*582 */
-    top: calc(1200/1843*566px); /* 1200/1843*145 */
+    margin-left: 224px;
+    left: calc(1200/1920*358px); /* 1200/1920*582 */
+    top: calc(1200/1920*566px); /* 1200/1920*145 */
 }
 
 #hero3cap {
     position: absolute;
-    margin-left: 200px;
-    left: calc(1200/1843*1284px);
-    top: calc(1200/1843*275px);
+    margin-left: 224px;
+    left: calc(1200/1920*1284px);
+    top: calc(1200/1920*275px);
 }
 
 #hero4cap {
     position: absolute;
-    margin-left: 200px;
-    left: calc(1200/1843*761px);
-    top: calc(1200/1843*19px);
+    margin-left: 224px;
+    left: calc(1200/1920*761px);
+    top: calc(1200/1920*19px);
 }
 
 #hero5cap {
     position: absolute;
-    margin-left: 200px;
-    left: calc(1200/1843*563px);
-    top: calc(1200/1843*849px);
+    margin-left: 224px;
+    left: calc(1200/1920*563px);
+    top: calc(1200/1920*849px);
 }
 
 #hero6cap {
     position: absolute;
-    margin-left: 200px;
-    left: calc(1200/1843*1341px);
-    top: calc(1200/1843*421px);
+    margin-left: 224px;
+    left: calc(1200/1920*1341px);
+    top: calc(1200/1920*421px);
 }
 
 #hero7cap {
     position: absolute;
-    margin-left: 200px;
-    left: calc(1200/1843*452px);
-    top: calc(1200/1843*275px);
+    margin-left: 224px;
+    left: calc(1200/1920*452px);
+    top: calc(1200/1920*275px);
 }
 
 #hero8cap {
     position: absolute;
-    margin-left: 200px;
-    left: calc(1200/1843*975px);
-    top: calc(1200/1843*18px);
+    margin-left: 224px;
+    left: calc(1200/1920*975px);
+    top: calc(1200/1920*18px);
 }
 
 #hero9cap {
     position: absolute;
-    margin-left: 200px;
-    left: calc(1200/1843*1378px);
-    top: calc(1200/1843*565px);
+    margin-left: 224px;
+    left: calc(1200/1920*1378px);
+    top: calc(1200/1920*565px);
 }
 
 #hero10cap {
     position: absolute;
-    margin-left: 200px;
-    left: calc(1200/1843*1284px);
-    top: calc(1200/1843*703px);
+    margin-left: 224px;
+    left: calc(1200/1920*1284px);
+    top: calc(1200/1920*703px);
 }
 
 #hero11cap {
     position: absolute;
-    margin-left: 200px;
-    left: calc(1200/1843*395px);
-    top: calc(1200/1843*422px);
+    margin-left: 224px;
+    left: calc(1200/1920*395px);
+    top: calc(1200/1920*422px);
 }
 
 #hero12cap {
     position: absolute;
-    margin-left: 200px;
-    left: calc(1200/1843*1154px);
-    top: calc(1200/1843*144px);
+    margin-left: 224px;
+    left: calc(1200/1920*1154px);
+    top: calc(1200/1920*144px);
 }
 
 #hero13cap {
     position: absolute;
-    margin-left: 200px;
-    left: calc(1200/1843*1173px);
-    top: calc(1200/1843*847px);
+    margin-left: 224px;
+    left: calc(1200/1920*1173px);
+    top: calc(1200/1920*847px);
 }
 
 #hero14cap {
     position: absolute;
-    margin-left: 200px;
-    left: calc(1200/1843*452px);
-    top: calc(1200/1843*704px);
+    margin-left: 224px;
+    left: calc(1200/1920*452px);
+    top: calc(1200/1920*704px);
+}
+
+#hero15cap {
+    position: absolute;
+    margin-left: 224px;
+    left: calc(1200/1920*982px);
+    top: calc(1200/1920*950px);
+}
+
+#hero16cap {
+    position: absolute;
+    margin-left: 224px;
+    left: calc(1200/1920*750px);
+    top: calc(1200/1920*950px);
+}
+
+
+.mb-3 {
+  color: #fff;
+}
+
+.player-page__core {
+    margin-top: auto;
+    overflow: hidden;
+    position: relative;
+    width: 50%;
+}
+
+.player-page__core-stats {
+    grid-template-columns: 30% 40% 30%;
+    padding-bottom: 1.5rem;
+    position: relative;
+    z-index: 1;
+    min-height: 405px;
+}
+
+.grid {
+    display: grid
+}
+
+.player-page__headshot {
+    bottom: 0;
+    left: 50%;
+    max-width: 80%;
+    position: absolute;
+    transform: translateX(-50%);
+    width: 300px;
+    z-index: 1
+}
+
+.player-page__headshot img {
+    display: block;
+    width: 100%
+}
+
+@media screen and (min-width: 768px) {
+    .player-page__headshot {
+        width:300px
+    }
+}
+
+.player-page__headshot-bg {
+    aspect-ratio: 1/1;
+    background: radial-gradient(#18436d,rgba(3,10,21,0) 60%);
+    border-radius: 50%;
+    filter: blur(30px);
+    left: 50%;
+    position: absolute;
+    top: -2%;
+    transform: translateX(-50%);
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    width: 75%
+}
+
+.player-page__headshot img {
+    display: block;
+    width: 100%
+}
+
+
+.player-page__headshot-bg {
+    aspect-ratio: 1/1;
+    background: radial-gradient(#18436d,rgba(3,10,21,0) 60%);
+    border-radius: 50%;
+    filter: blur(30px);
+    left: 50%;
+    position: absolute;
+    top: -2%;
+    transform: translateX(-50%);
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    width: 75%
+}
+
+
+.player-page__core-stat {
+    border-bottom-style: dashed;
+    border-bottom-width: 1px
+}
+
+.player-page__core-stat:first-child {
+    grid-column: 1;
+    grid-row: 1
+}
+
+.player-page__core-stat:nth-child(2) {
+    grid-column: 1;
+    grid-row: 2
+}
+
+.player-page__core-stat:nth-child(3) {
+    border: none;
+    grid-column: 1;
+    grid-row: 3
+}
+
+.player-page__core-stat:nth-child(4) {
+    grid-column: 3;
+    grid-row: 1;
+    text-align: right
+}
+
+.player-page__core-stat:nth-child(5) {
+    grid-column: 3;
+    grid-row: 2;
+    text-align: right
+}
+
+.player-page__core-stat:nth-child(6) {
+    border: none;
+    grid-column: 3;
+    grid-row: 3;
+    text-align: right
 }
 
