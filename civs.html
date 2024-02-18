@@ -78,9 +78,20 @@
         </nav>
 
             <!-- <iframe src="https://apps.hiddencup.com/Maps?showcase=0" height="100%" width="100%"></iframe> -->
-            <iframe src="https://apps.hiddencup.com/Civs" frameborder="0" height="100%" width="100%" style="overflow:hidden;margin-bottom:0px;"></iframe>
+            <iframe src="https://scottmanski.github.io/CivApp/" frameborder="0" height="100%" width="100%" style="overflow:hidden;margin-bottom:0px;"></iframe>
 
     </body>
 </body>
+
+<script>
+  $(window).ready(function() {
+  $("iframe").css("padding-bottom", $(".container-fluid").height());
+});
+
+  $(window).resize(function() {
+  $("iframe").css("padding-bottom", $(".container-fluid").height());
+});
+
+</script>
 
 </html>
