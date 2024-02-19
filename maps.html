@@ -82,5 +82,14 @@
 
     </body>
 </body>
+<script>
+  $(window).ready(function() {
+  $("iframe").css("padding-bottom", $(".container-fluid").height());
+});
 
+  $(window).resize(function() {
+  $("iframe").css("padding-bottom", $(".container-fluid").height());
+});
+
+</script>
 </html>
