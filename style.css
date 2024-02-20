@@ -282,6 +282,19 @@ div[data-value="Feedback"] {
     vertical-align: bottom;
 }
 
+.whatishc-bg {
+      background: radial-gradient(circle at center, #31516e 0, #131521 70%);
+    background-position: center;
+    background-size: 285px;
+    height: 188.875px;
+    font-size: 30px;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+    padding: 5px;
+    vertical-align: bottom;
+}
+
 .trophy-bg {
     background-image: url(images/trophy.jpg);
     background-position: center;
