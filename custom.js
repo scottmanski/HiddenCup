@@ -39,10 +39,11 @@
                 document.getElementById('seconds').innerText = Math.floor((distance % (minute)) / second);
 
             //do something later when date is reached
-            //if (distance < 0) {
-            //  clearInterval(x);
-            //  'IT'S MY BIRTHDAY!;
-            //}
+            if (distance < 0) {
+              clearInterval(x);
+             document.getElementById('countdown').style.display = "none";
+             document.getElementById('live').style.display = "block";
+            }
 
         }, second)
 

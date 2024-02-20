@@ -316,6 +316,21 @@ div[data-value="Feedback"] {
     vertical-align: bottom;
 }
 
+.ytshorts {
+  height: auto; 
+  width: 20% !important; 
+  left: 50%;
+  bottom: 0px; 
+  position: relative; 
+  transform: translate(-50%, 10%); 
+  z-index: 0; 
+}
+
+.ytshorts:hover {
+  transform: translate(-50%, 10%) scale(1.1); 
+  transition: transform .2s;
+}
+
 .trophy-bg {
     background-image: url(images/trophy.jpg);
     background-position: center;
@@ -803,5 +818,10 @@ div#container a {
     grid-column: 3;
     grid-row: 3;
     text-align: right
+}
+
+#live {
+  color: #fff;
+  font-size: 60px;
 }
 
