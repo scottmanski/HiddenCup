@@ -203,10 +203,15 @@ div[data-value="Feedback"] {
 }
 
 .heroes-bg {
-    background-image: url(images/heroes.png);
+  position: fixed;
+  display: block;
+  background-color: black;
+    background-image: url(images/Full_Leaked_Heroes_6_voted_transparent.png);
     background-position: center;
+    filter: blur(2px);
     background-size: 285px;
     height: 188.875px;
+    width: 100%;
     font-size: 24px;
     font-weight: 700;
     color: #fff;
@@ -218,6 +223,21 @@ div[data-value="Feedback"] {
     2px -2px 0 #000,
     -2px 2px 0 #000,
     2px 2px 0 #000;  
+    z-index: 0;
+}
+
+.heroes-text {
+  padding-top: 10px; 
+  position: fixed;
+  margin: auto;
+  width: 100%;
+  font-size: 24px;
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+  padding: 5px;
+  top: 10px;
+  z-index: 1;
 }
 
 .merch-bg {
@@ -255,6 +275,7 @@ div[data-value="Feedback"] {
     background-image: url(images/bracket.png);
     background-position: center;
     background-size: 285px;
+    filter: blur(2px);
     height: 188.875px;
     font-size: 28px;
     font-weight: 700;
