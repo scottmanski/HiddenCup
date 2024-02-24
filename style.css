@@ -2,7 +2,7 @@ html {
     background-color: #131521;
     background: radial-gradient(circle at center, #31516e 0, #131521 70%);
     background-size: cover;
-    height: 100%;
+    /*height: 100%;*/
 }
 
 body {
