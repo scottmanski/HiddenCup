@@ -271,6 +271,25 @@ div[data-value="Feedback"] {
     vertical-align: bottom;
 }
 
+.guess-bg {
+    background-image: url(images/heroguess.png);
+    background-position: center;
+    background-size: 285px;
+    filter: blur(2px);
+    height: 188.875px;
+    font-size: 28px;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+    padding: 5px;
+    vertical-align: bottom;
+                text-shadow:
+    -2px -2px 0 #000,
+    2px -2px 0 #000,
+    -2px 2px 0 #000,
+    2px 2px 0 #000;  
+}
+
 .bracket-bg {
     background-image: url(images/bracket.png);
     background-position: center;
